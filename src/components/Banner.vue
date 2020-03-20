@@ -1,13 +1,15 @@
 <template>
   <div class="banner d-flex flex-column">
     <Header></Header>
-    <div class="row my-auto text-center">
-      <div class="col-8 mx-auto banner-headers">
-        <h1 class="text-white">Самый масштабный</h1>
-        <h1 class="text-uppercase
-        text-white mt-5 font-weight-bolder">марафон парикмахеров <br /> онлайн</h1>
+    <b-container fluid>
+      <div class="row my-auto text-center">
+        <div class="col-8 mx-auto banner-headers">
+          <h1 class="text-white">Самый масштабный</h1>
+          <h1 class="text-uppercase
+          text-white mt-5 font-weight-bolder">марафон парикмахеров <br /> онлайн</h1>
+        </div>
       </div>
-    </div>
+    </b-container>
   </div>
 </template>
 
