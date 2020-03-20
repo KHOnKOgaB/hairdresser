@@ -1,6 +1,6 @@
 <template>
 <div class="container-fluid px-0 registration">
-  <div class="pink py-5">
+  <div class="pink d-flex flex-column text-center py-5">
     <h2 class="font-weight-bolder text-center">Регистрация на марафон</h2>
     <div class="row align-items-center justify-content-around">
       <form class="register py-5" action="index.html" method="post">
@@ -18,7 +18,7 @@
           </div>
           <div class="col-6">
             <input type="email" class="form-control" placeholder="Ваш ник в Insragram*">
-            <p>* ВНИМАНИЕ! Необходимо использовать сой ник в Instagram,
+            <p class="text-left">* ВНИМАНИЕ! Необходимо использовать сой ник в Instagram,
               с которго вы подписались на аккаунт марафона, спикеров и спонсоров. Ваш аккаунт должен
           быть открытым и активным. Писать ник нужно без @, без ссылки,
           только маленькими буквами</p>
@@ -27,6 +27,7 @@
       </form>
     </div>
     <h2 class="font-weight-bolder text-center text-white mt-5">Стоимость участия 199₽</h2>
+    <img class="mt-auto" src="../assets/img/logo.png" />
   </div>
 </div>
 </template>
