@@ -14,7 +14,7 @@
       <div
       data-aos="flip-up"
       :data-aos-delay='item.delay'
-      class="col-4 my-3"
+      class="col-12 col-md-6 col-lg-4 my-3"
       v-for="(item, index) in features"  :key="index">
         <div class="feature-card px-3 py-3">
           <p class="title">{{item.title}}</p>

@@ -6,7 +6,7 @@
        data-aos="fade-up"
       data-aos-duration="500"
       :data-aos-delay="item.delay"
-      class="col-4 my-3">
+      class="col-12 col-md-6 col-lg-4 my-3">
         <img class="prog-img" :src="item.photo" />
       </div>
     </div>

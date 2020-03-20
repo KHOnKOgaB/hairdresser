@@ -3,7 +3,7 @@
   <h2 class="font-weight-bolder text-center">Правила участия</h2>
   <div class="container">
     <div class="row align-items-center justify-content-center py-3">
-      <div class="col-3" v-for="(item, index) in rules"  :key="index">
+      <div class="col-12 col-md-6 col-lg-3" v-for="(item, index) in rules"  :key="index">
         <div class="rules-number">
           <div
           data-aos="zoom-in"
