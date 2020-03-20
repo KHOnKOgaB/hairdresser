@@ -1,0 +1,48 @@
+<template>
+<div class="container-fluid px-0 registration">
+  <div class="pink py-5">
+    <h2 class="font-weight-bolder text-center">Регистрация на марафон</h2>
+    <div class="row align-items-center justify-content-around">
+      <form class="register py-5" action="index.html" method="post">
+        <div class="row mb-5">
+          <div class="col-6">
+            <input type="text" class="form-control" placeholder="Введите ваше имя">
+          </div>
+          <div class="col-6">
+            <input type="email" class="form-control" placeholder="Введите ваш email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <input type="text" class="form-control" placeholder="Введите ваш телефон">
+          </div>
+          <div class="col-6">
+            <input type="email" class="form-control" placeholder="Ваш ник в Insragram">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</template>
+
+<script>
+
+</script>
+
+
+<style scoped lang="scss">
+@import '../assets/scss/main.scss';
+.registration {
+    background: url("../assets/img/banner-bottom.jpg") no-repeat 0 0;
+    min-height: 100vh;
+    background-size: cover;
+}
+.pink {
+    min-height: 100vh;
+    background: rgba(238, 159, 159, 0.25);
+}
+.register {
+  background-color: $black;
+}
+</style>

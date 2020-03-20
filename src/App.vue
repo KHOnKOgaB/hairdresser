@@ -5,6 +5,7 @@
     <Teach></Teach>
     <Programm></Programm>
     <Rules></Rules>
+    <Registration></Registration>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Features from './components/Features.vue';
 import Teach from './components/Teach.vue';
 import Programm from './components/Programm.vue';
 import Rules from './components/Rules.vue';
+import Registration from './components/Registration.vue';
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     Teach,
     Programm,
     Rules,
+    Registration,
   },
 };
 </script>
