@@ -5,6 +5,7 @@
         <h2 class="font-weight-bolder">Не упусти</h2>
         <h2>возможность безопасно учиться</h2>
         <p>у лучших по цене рулона бумаги!</p>
+        <button type="button" class="btn btn-primary text-white">Зарегистрируйся на марафон</button>
       </div>
     </div>
   </div>

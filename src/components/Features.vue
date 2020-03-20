@@ -1,7 +1,11 @@
 <template>
   <div class="container py-5">
-    <h2 class="text-center font-weight-bold">Не упусти <br> потрясающую возможность </h2>
-    <h3 class="text-center">побывать на мастер-классе у лучших!</h3>
+    <div class="features-header d-flex flex-column align-items-center justify-content-center">
+      <h2 class="text-center font-weight-bold">Не упусти <br> потрясающую возможность </h2>
+      <h3 class="text-center">побывать на мастер-классе у лучших!</h3>
+      <button type="button"
+      class="btn btn-primary text-white my-3">Зарегистрируйся на марафон</button>
+    </div>
     <div class="row">
       <div data-aos="fade-up" class="col-3">
         <div class="feature-card px-3 py-3">
@@ -27,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-between mt-5">
+    <div class="row justify-content-between mt-5 mb-5">
       <div data-aos="fade-up"
       data-aos-delay="100" class="col-3 ml-auto">
         <div class="feature-card px-3 py-3">
