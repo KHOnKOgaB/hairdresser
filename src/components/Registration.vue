@@ -53,7 +53,7 @@
       </div>
     </div>
     <h2 class="font-weight-bolder text-center text-white mt-5">Стоимость участия 199₽</h2>
-    <div class="my-3 text-white">
+    <div class="my-4 text-white">
       <font-awesome-icon class="hand-down" icon="hand-point-down" />
       <font-awesome-icon class="hand-down ml-4" icon="hand-point-down" />
       <font-awesome-icon class="hand-down ml-4" icon="hand-point-down" />
@@ -78,7 +78,7 @@ export default {
         phone: '',
         instagram: '',
       },
-      note: 'Необходимо использовать сой ник в Instagram, с которго вы подписались на аккаунт марафона, спикеров и спонсоров. Ваш аккаунт должен быть открытым и активным. Писать ник нужно без @, без ссылки, только маленькими буквами',
+      note: ' Необходимо использовать сой ник в Instagram, с которго вы подписались на аккаунт марафона, спикеров и спонсоров. Ваш аккаунт должен быть открытым и активным. Писать ник нужно без @, без ссылки, только маленькими буквами',
     };
   },
   methods: {
