@@ -8,7 +8,7 @@
       </a>
     </div>
     <div class="row">
-      <div data-aos="fade-up" class="col-3">
+      <div data-aos="fade-up" class="col-4">
         <div class="feature-card px-3 py-3">
           <p class="title">30</p>
           <p class="name">горячих дней</p>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div data-aos="fade-up"
-      data-aos-delay="100" class="col-3 ml-auto">
+      data-aos-delay="100" class="col-4 ml-auto">
         <div class="feature-card px-3 py-3">
           <p class="title">14</p>
           <p class="name">вдохновляющих спикеров</p>
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div data-aos="fade-up"
-      data-aos-delay="150" class="col-3 ml-auto">
+      data-aos-delay="150" class="col-4 ml-auto">
         <div class="feature-card px-3 py-3">
           <p class="title">28</p>
           <p class="name">мотивирующих подарков</p>
@@ -34,7 +34,7 @@
     </div>
     <div class="row justify-content-between mt-5 mb-5">
       <div data-aos="fade-up"
-      data-aos-delay="100" class="col-3 ml-auto">
+      data-aos-delay="100" class="col-4 ml-auto">
         <div class="feature-card px-3 py-3">
           <p class="title">14</p>
           <p class="name">важных секций</p>
@@ -43,7 +43,7 @@
         </div>
       </div>
       <div data-aos="fade-up"
-      data-aos-delay="150" class="col-3 mx-auto">
+      data-aos-delay="150" class="col-4 mx-auto">
         <div class="feature-card px-3 py-3">
           <p class="title">14</p>
           <p class="name">розыгрышей на бесплатное обучение</p>
