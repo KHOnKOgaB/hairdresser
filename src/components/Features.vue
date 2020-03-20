@@ -81,6 +81,7 @@ export default {
   text-align: center;
   height: 100%;
   cursor: pointer;
+  transition: ease-out 0.2s;
   &:hover {
     background-color: $secondary;
     color: $white;

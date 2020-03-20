@@ -76,10 +76,16 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: ease-out 0.2s;
+    color: $primary;
+    cursor: pointer;
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
 }
 .number {
     font-size: 4rem;
-    color: $black;
     font-weight: bolder;
 }
 </style>
