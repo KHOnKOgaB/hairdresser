@@ -41,7 +41,7 @@ export default {
 .banner-headers {
   background: rgba(238, 159, 159, 0.4);
   margin-top: 5rem;
-  padding: 8rem 2rem;
+  padding: 10rem 2rem;
 }
 
 </style>

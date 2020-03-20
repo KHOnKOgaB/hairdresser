@@ -3,52 +3,23 @@
     <div class="features-header d-flex flex-column align-items-center justify-content-center">
       <h2 class="text-center font-weight-bold">Не упусти <br> потрясающую возможность </h2>
       <h3 class="text-center">побывать на мастер-классе у лучших!</h3>
-      <a class="btn btn-primary text-white my-3" href="#registation" role="button" v-smooth-scroll>
+      <a class="btn btn-primary text-white my-3"
+      href="#registation"
+      role="button"
+      v-smooth-scroll>
         Зарегистрируйся на марафон
       </a>
     </div>
-    <div class="row">
-      <div data-aos="fade-up" class="col-4">
+    <div class="row justify-content-around">
+      <div
+      data-aos="flip-up"
+      :data-aos-delay='item.delay'
+      class="col-12 col-md-6 col-lg-4 my-3"
+      v-for="(item, index) in features"  :key="index">
         <div class="feature-card px-3 py-3">
-          <p class="title">30</p>
-          <p class="name">горячих дней</p>
-          <p class="info">каждый день новые знания, полезные кейсы и новые знакомства</p>
-        </div>
-      </div>
-      <div data-aos="fade-up"
-      data-aos-delay="100" class="col-4 ml-auto">
-        <div class="feature-card px-3 py-3">
-          <p class="title">14</p>
-          <p class="name">вдохновляющих спикеров</p>
-          <p class="info">самые крутые профессионалы подялется секретами своего мастерства</p>
-        </div>
-      </div>
-      <div data-aos="fade-up"
-      data-aos-delay="150" class="col-4 ml-auto">
-        <div class="feature-card px-3 py-3">
-          <p class="title">28</p>
-          <p class="name">мотивирующих подарков</p>
-          <p class="info">на сумму свыше 100 000 ₽</p>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-between mt-5 mb-5">
-      <div data-aos="fade-up"
-      data-aos-delay="100" class="col-4 ml-auto">
-        <div class="feature-card px-3 py-3">
-          <p class="title">14</p>
-          <p class="name">важных секций</p>
-          <p class="info">каждый мастер-класс значительно поднимет ваш уровень,
-            чтобы вы начали зарабатывать в 10 раз больше, чем сейчас</p>
-        </div>
-      </div>
-      <div data-aos="fade-up"
-      data-aos-delay="150" class="col-4 mx-auto">
-        <div class="feature-card px-3 py-3">
-          <p class="title">14</p>
-          <p class="name">розыгрышей на бесплатное обучение</p>
-          <p class="info">Общая стоимость мастер-классов от наших спикеров - более 1.000.000₽.
-            Узнаем, кому улыбнется удача</p>
+          <p class="title">{{item.title}}</p>
+          <p class="name">{{item.name}}</p>
+          <p class="info">{{item.info}}</p>
         </div>
       </div>
     </div>
@@ -56,7 +27,44 @@
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      features: [
+        {
+          title: '30',
+          name: 'горячих дней',
+          info: 'каждый день новые знания, полезные кейсы и новые знакомства',
+          delay: '100',
+        },
+        {
+          title: '14',
+          name: 'вдохновляющих спикеров',
+          info: 'самые крутые профессионалы подялется секретами своего мастерства',
+          delay: '100',
+        },
+        {
+          title: '28',
+          name: 'мотивирующих подарков',
+          info: 'на сумму свыше 100 000 ₽',
+          delay: '100',
+        },
+        {
+          title: '14',
+          name: 'важных секций',
+          info: 'каждый мастер-класс значительно поднимет ваш уровень, чтобы вы начали зарабатывать в 10 раз больше, чем сейчас',
+          delay: '100',
+        },
+        {
+          title: '14',
+          name: 'розыгрышей на бесплатное обучение',
+          info: 'Общая стоимость мастер-классов от наших спикеров - более 1.000.000₽. Узнаем, кому улыбнется удача',
+          delay: '100',
+        },
+      ],
+    };
+  },
+};
 </script>
 
 
@@ -73,6 +81,7 @@
   text-align: center;
   height: 100%;
   cursor: pointer;
+  transition: ease-out 0.2s;
   &:hover {
     background-color: $secondary;
     color: $white;
