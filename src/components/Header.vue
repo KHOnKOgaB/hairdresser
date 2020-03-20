@@ -4,7 +4,9 @@
       <b-navbar-brand>
         <img class="logo" src="../assets/img/logo.png" />
       </b-navbar-brand>
-      <b-navbar-text class="text-white ml-auto">с 10 февраля по 2 марта 2020 года</b-navbar-text>
+      <b-navbar-nav class="ml-auto">
+        <b-nav-text class="text-white">с 10 февраля по 2 марта 2020 года</b-nav-text>
+      </b-navbar-nav>
     </b-container>
   </b-navbar>
 </template>

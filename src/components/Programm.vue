@@ -1,16 +1,20 @@
 <template>
-  <div class="container py-5">
+  <b-container class="container py-5">
     <h2 class="font-weight-bolder text-center mb-5">Программа марафона</h2>
-    <div class="row align-items-center justify-content-around mb-4">
-      <div v-for="(item, index) in speakers"  :key="index"
-       data-aos="fade-up"
-      data-aos-duration="500"
-      :data-aos-delay="item.delay"
-      class="col-12 col-md-6 col-lg-4 my-3">
-        <img class="prog-img" :src="item.photo" />
-      </div>
-    </div>
-  </div>
+    <b-row class="row align-items-center justify-content-around mb-4">
+      <b-col
+        v-for="(item, index) in speakers"
+        :key="index"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        :data-aos-delay="index * 50"
+        md="6"
+        lg="4"
+        class="my-3 text-center">
+        <img class="prog-img mx-auto" :src="item.photo" />
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>

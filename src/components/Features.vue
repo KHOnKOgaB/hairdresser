@@ -10,19 +10,21 @@
         Зарегистрируйся на марафон
       </a>
     </div>
-    <div class="row justify-content-around">
-      <div
-      data-aos="flip-up"
-      :data-aos-delay='item.delay'
-      class="col-12 col-md-6 col-lg-4 my-3"
-      v-for="(item, index) in features"  :key="index">
+    <b-row class="justify-content-around">
+      <b-col
+        md="6"
+        lg="4"
+        data-aos="flip-up"
+        :data-aos-delay='item.delay'
+        class="col-12 my-3"
+        v-for="(item, index) in features"  :key="index">
         <div class="feature-card px-3 py-3">
           <p class="title">{{item.title}}</p>
           <p class="name">{{item.name}}</p>
           <p class="info">{{item.info}}</p>
         </div>
-      </div>
-    </div>
+      </b-col>
+    </b-row>
   </div>
 </template>
 
