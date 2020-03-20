@@ -10,7 +10,7 @@
     <div class="row align-items-center justify-content-around">
       <div class="register py-5">
         <div class="row mb-5">
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <b-form-input
               v-model="form.name"
               required
@@ -19,7 +19,7 @@
               class="form-control"
               placeholder="Введите ваше имя"/>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <b-form-input
               v-model="form.email"
               required
@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <b-form-input
               v-model="form.phone"
               required
@@ -39,7 +39,7 @@
               name="entry.666901678"
               placeholder="Введите ваш телефон"/>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <b-form-input
               v-model="form.instagram"
               required

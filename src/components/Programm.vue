@@ -66,4 +66,9 @@ export default {
 .prog-img {
   width: 100%;
 }
+@include media-breakpoint-down(md) {
+  .prog-img {
+    max-width: 270px;
+  }
+}
 </style>
