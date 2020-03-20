@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid px-0 registration">
+<div class="container-fluid px-0 registration" id="registation">
   <div class="pink d-flex flex-column align-items-center text-center py-5">
     <h2 class="font-weight-bolder text-center">Регистрация на марафон</h2>
     <div class="row align-items-center justify-content-around">
@@ -18,7 +18,8 @@
           </div>
           <div class="col-6">
             <input type="email" class="form-control" placeholder="Ваш ник в Insragram*">
-            <p class="text-left">* ВНИМАНИЕ! Необходимо использовать сой ник в Instagram,
+            <p class="text-left"><span class="font-weight-bold">*ВНИМАНИЕ!</span>
+              Необходимо использовать сой ник в Instagram,
               с которго вы подписались на аккаунт марафона, спикеров и спонсоров. Ваш аккаунт должен
           быть открытым и активным. Писать ник нужно без @, без ссылки,
           только маленькими буквами</p>
@@ -33,7 +34,9 @@
       <font-awesome-icon class="hand-down ml-4" icon="hand-point-down" />
     </div>
     <button type="button" class="btn btn-primary text-white">Зарегистрируйся на марафон</button>
-    <img class="footer-logo mt-auto" src="../assets/img/logo.png" />
+    <a class="mt-auto" href="#">
+      <img class="footer-logo" src="../assets/img/logo.png" />
+    </a>
   </div>
 </div>
 </template>
@@ -51,7 +54,7 @@
 }
 .pink {
     min-height: 100vh;
-    background: rgba(238, 159, 159, 0.45);
+    background: rgba(238, 159, 159, 0.5);
 }
 .register {
   width: 800px;

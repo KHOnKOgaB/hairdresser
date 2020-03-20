@@ -3,8 +3,9 @@
     <div class="features-header d-flex flex-column align-items-center justify-content-center">
       <h2 class="text-center font-weight-bold">Не упусти <br> потрясающую возможность </h2>
       <h3 class="text-center">побывать на мастер-классе у лучших!</h3>
-      <button type="button"
-      class="btn btn-primary text-white my-3">Зарегистрируйся на марафон</button>
+      <a class="btn btn-primary text-white my-3" href="#registation" role="button">
+        Зарегистрируйся на марафон
+      </a>
     </div>
     <div class="row">
       <div data-aos="fade-up" class="col-3">

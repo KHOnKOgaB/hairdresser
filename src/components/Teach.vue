@@ -5,7 +5,9 @@
         <h2 class="font-weight-bolder">Не упусти</h2>
         <h2>возможность безопасно учиться</h2>
         <p>у лучших по цене рулона бумаги!</p>
-        <button type="button" class="btn btn-primary text-white">Зарегистрируйся на марафон</button>
+        <a class="btn btn-primary text-white my-3" href="#registation" role="button">
+          Зарегистрируйся на марафон
+        </a>
       </div>
     </div>
   </div>
@@ -19,6 +21,6 @@
 <style scoped lang="scss">
 @import '../assets/scss/main.scss';
 .teach {
-  background-color: $secondary;
+  background-color: rgba(238, 159, 159, 0.3);;
 }
 </style>

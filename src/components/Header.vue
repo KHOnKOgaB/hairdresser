@@ -2,7 +2,9 @@
   <div class="header py-2">
     <div class="row d-flex align-items-center justify-content-around">
       <div class="col-3">
-        <img class="logo" src="../assets/img/logo.png" />
+        <a href="/">
+          <img class="logo" src="../assets/img/logo.png" />
+        </a>
       </div>
       <div class="col-3">
         <p class="text-white my-0">

@@ -4,12 +4,12 @@
     <div class="row align-items-center justify-content-center">
       <div class="col-4 rules-number">
         <div class="round-number"><span class="number">1</span></div>
-        <h3 class="mt-2">Подпишитесь</h3>
+        <h4 class="mt-2 font-weight-bold">Подпишитесь</h4>
         <p>на аккаунт марафона в Instagram</p>
       </div>
       <div class="col-4 rules-number">
         <div class="round-number"><span class="number">2</span></div>
-        <h3 class="mt-2">Подпишитесь</h3>
+        <h4 class="mt-2 font-weight-bold">Подпишитесь</h4>
         <p>на <span class="font-weight-bold">всех</span>
           спикеров и спонсоров в подписках аккаунта марафона</p>
       </div>
@@ -17,12 +17,13 @@
   <div class="row align-items-center justify-content-center">
     <div class="col-4 rules-number">
       <div class="round-number"><span class="number">3</span></div>
-      <h3 class="mt-2">Зарегистрируйтесь на сайте</h3>
+      <h4 class="mt-2 font-weight-bold">Зарегистрируйтесь на сайте</h4>
       <p>используя свой ник в Instagram</p>
     </div>
     <div class="col-4 rules-number">
       <div class="round-number"><span class="number">4</span></div>
-      <h3 class="mt-2">Оплатите участие</h3>
+      <h4 class="mt-2 font-weight-bold">Оплатите участие</h4>
+      <p>Денежками онлайн</p>
     </div>
   </div>
 </div>
@@ -35,7 +36,7 @@
 <style scoped lang="scss">
 @import '../assets/scss/main.scss';
 .rules {
-    background-color: $secondary;
+    background-color: rgba(238, 159, 159, 0.25);;
 }
 .rules-number {
     display: flex;
