@@ -1,6 +1,6 @@
 <template>
 <div class="container-fluid px-0 registration">
-  <div class="pink d-flex flex-column text-center py-5">
+  <div class="pink d-flex flex-column align-items-center text-center py-5">
     <h2 class="font-weight-bolder text-center">Регистрация на марафон</h2>
     <div class="row align-items-center justify-content-around">
       <form class="register py-5" action="index.html" method="post">
@@ -27,7 +27,13 @@
       </form>
     </div>
     <h2 class="font-weight-bolder text-center text-white mt-5">Стоимость участия 199₽</h2>
-    <img class="mt-auto" src="../assets/img/logo.png" />
+    <div class="my-3 text-white">
+      <font-awesome-icon class="hand-down" icon="hand-point-down" />
+      <font-awesome-icon class="hand-down ml-4" icon="hand-point-down" />
+      <font-awesome-icon class="hand-down ml-4" icon="hand-point-down" />
+    </div>
+    <button type="button" class="btn btn-primary text-white">Зарегистрируйся на марафон</button>
+    <img class="footer-logo mt-auto" src="../assets/img/logo.png" />
   </div>
 </div>
 </template>
@@ -49,5 +55,11 @@
 }
 .register {
   width: 800px;
+}
+.footer-logo {
+  width: 200px;
+}
+.hand-down {
+  font-size: 2rem;
 }
 </style>
