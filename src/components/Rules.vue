@@ -1,35 +1,49 @@
 <template>
 <div class="container-fluid rules py-5 text-center">
   <h2 class="font-weight-bolder text-center">Правила участия</h2>
-    <div class="row align-items-center justify-content-center">
-      <div class="col-4 rules-number">
-        <div class="round-number"><span class="number">1</span></div>
-        <h4 class="mt-2 font-weight-bold">Подпишитесь</h4>
-        <p>на аккаунт марафона в Instagram</p>
+  <div class="container">
+    <div class="row align-items-center justify-content-center py-3">
+      <div class="col-3" v-for="(item, index) in rules"  :key="index">
+        <div class="rules-number">
+          <div class="round-number"><span class="number">{{item.number}}</span></div>
+          <h4 class="my-2 font-weight-bold">{{item.title}}</h4>
+          <p>{{item.text}}</p>
+        </div>
       </div>
-      <div class="col-4 rules-number">
-        <div class="round-number"><span class="number">2</span></div>
-        <h4 class="mt-2 font-weight-bold">Подпишитесь</h4>
-        <p>на <span class="font-weight-bold">всех</span>
-          спикеров и спонсоров в подписках аккаунта марафона</p>
-      </div>
-    </div>
-  <div class="row align-items-center justify-content-center">
-    <div class="col-4 rules-number">
-      <div class="round-number"><span class="number">3</span></div>
-      <h4 class="mt-2 font-weight-bold">Зарегистрируйтесь на сайте</h4>
-      <p>используя свой ник в Instagram</p>
-    </div>
-    <div class="col-4 rules-number">
-      <div class="round-number"><span class="number">4</span></div>
-      <h4 class="mt-2 font-weight-bold">Оплатите участие</h4>
-      <p>Денежками онлайн</p>
-    </div>
+  </div>
   </div>
 </div>
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      rules: [
+        {
+          number: '1',
+          title: 'Подпишитесь',
+          text: 'на аккаунт марафона в Instagram',
+        },
+        {
+          number: '2',
+          title: 'Подпишитесь',
+          text: 'на всех спикеров и спонсоров в подписках аккаунта марафона',
+        },
+        {
+          number: '3',
+          title: 'Зарегистрируйтесь на сайте',
+          text: 'используя свой ник в Instagram',
+        },
+        {
+          number: '4',
+          title: 'Оплатите участие',
+          text: 'Денежками онлайн',
+        },
+      ],
+    };
+  },
+};
 </script>
 
 
@@ -42,7 +56,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    height: 300px;
+    padding: 1rem 1rem;
 }
 .round-number {
     background-color: $white;
