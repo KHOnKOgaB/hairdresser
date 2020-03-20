@@ -1,23 +1,48 @@
 <template>
 <div class="container-fluid px-0 registration" id="registation">
-  <div class="pink d-flex flex-column align-items-center text-center py-5">
+  <form
+    class="pink d-flex flex-column align-items-center text-center py-5"
+    method="POST"
+    @submit.prevent="submitFrom"
+    ref="form"
+    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfXix3XzMPKy4dBE9z_4CvSmCQi4B6w8uT_ahxCnkCzpCWUFg/formResponse">
     <h2 class="font-weight-bolder text-center">Регистрация на марафон</h2>
     <div class="row align-items-center justify-content-around">
-      <form class="register py-5" action="index.html" method="post">
+      <div class="register py-5">
         <div class="row mb-5">
           <div class="col-6">
-            <input type="text" class="form-control" placeholder="Введите ваше имя">
+            <b-form-input
+              required
+              type="text"
+              name="entry.1880855526"
+              class="form-control"
+              placeholder="Введите ваше имя"/>
           </div>
           <div class="col-6">
-            <input type="email" class="form-control" placeholder="Введите ваш email">
+            <b-form-input
+              required
+              type="email"
+              name="entry.1562501161"
+              class="form-control"
+              placeholder="Введите ваш email"/>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
-            <input type="text" class="form-control" placeholder="Введите ваш телефон">
+            <b-form-input
+              required
+              type="text"
+              class="form-control"
+              name="entry.666901678"
+              placeholder="Введите ваш телефон"/>
           </div>
           <div class="col-6">
-            <input type="email" class="form-control" placeholder="Ваш ник в Insragram*">
+            <b-form-input
+              required
+              type="text"
+              class="form-control"
+              name="entry.572496809"
+              placeholder="Ваш ник в Insragram*"/>
             <p class="text-left"><span class="font-weight-bold">*ВНИМАНИЕ!</span>
               Необходимо использовать сой ник в Instagram,
               с которго вы подписались на аккаунт марафона, спикеров и спонсоров. Ваш аккаунт должен
@@ -25,7 +50,7 @@
           только маленькими буквами</p>
           </div>
         </div>
-      </form>
+      </div>
     </div>
     <h2 class="font-weight-bolder text-center text-white mt-5">Стоимость участия 199₽</h2>
     <div class="my-3 text-white">
@@ -33,15 +58,27 @@
       <font-awesome-icon class="hand-down ml-4" icon="hand-point-down" />
       <font-awesome-icon class="hand-down ml-4" icon="hand-point-down" />
     </div>
-    <button type="button" class="btn btn-primary text-white">Зарегистрируйся на марафон</button>
+    <button type="submit" class="btn btn-primary text-white">Зарегистрируйся на марафон</button>
     <a class="mt-auto" href="#">
       <img class="footer-logo" src="../assets/img/logo.png" />
     </a>
-  </div>
+  </form>
 </div>
 </template>
 
 <script>
+import axios from 'axios';
+
+export default {
+  methods: {
+    submitFrom() {
+      const data = new FormData(this.$refs.form);
+      axios.post('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfXix3XzMPKy4dBE9z_4CvSmCQi4B6w8uT_ahxCnkCzpCWUFg/formResponse', data).then((res) => {
+        console.log(res);
+      });
+    },
+  },
+};
 </script>
 
 
