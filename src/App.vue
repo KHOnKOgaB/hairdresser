@@ -2,18 +2,27 @@
   <div id="app">
     <Banner></Banner>
     <Features></Features>
+    <Teach></Teach>
+    <Programm></Programm>
+    <Rules></Rules>
   </div>
 </template>
 
 <script>
 import Banner from './components/Banner.vue';
 import Features from './components/Features.vue';
+import Teach from './components/Teach.vue';
+import Programm from './components/Programm.vue';
+import Rules from './components/Rules.vue';
 
 export default {
   name: 'App',
   components: {
     Banner,
     Features,
+    Teach,
+    Programm,
+    Rules,
   },
 };
 </script>
