@@ -3,7 +3,7 @@
     <div class="features-header d-flex flex-column align-items-center justify-content-center">
       <h2 class="text-center font-weight-bold">Не упусти <br> потрясающую возможность </h2>
       <h3 class="text-center">побывать на мастер-классе у лучших!</h3>
-      <a class="btn btn-primary text-white my-3" href="#registation" role="button">
+      <a class="btn btn-primary text-white my-3" href="#registation" role="button" v-smooth-scroll>
         Зарегистрируйся на марафон
       </a>
     </div>
@@ -69,9 +69,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   text-align: center;
   height: 100%;
+  cursor: pointer;
   &:hover {
     background-color: $secondary;
     color: $white;

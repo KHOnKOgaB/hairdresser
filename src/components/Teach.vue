@@ -5,7 +5,11 @@
         <h2 class="font-weight-bolder">Не упусти</h2>
         <h2>возможность безопасно учиться</h2>
         <p>у лучших по цене рулона бумаги!</p>
-        <a class="btn btn-primary text-white my-3" href="#registation" role="button">
+        <a
+          variant="primary"
+          class="btn btn-primary text-white my-3"
+          href="#registation"
+          v-smooth-scroll>
           Зарегистрируйся на марафон
         </a>
       </div>
