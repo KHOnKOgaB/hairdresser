@@ -12,6 +12,7 @@
         <div class="row mb-5">
           <div class="col-6">
             <b-form-input
+              v-model="form.name"
               required
               type="text"
               name="entry.1880855526"
@@ -20,6 +21,7 @@
           </div>
           <div class="col-6">
             <b-form-input
+              v-model="form.email"
               required
               type="email"
               name="entry.1562501161"
@@ -30,6 +32,7 @@
         <div class="row">
           <div class="col-6">
             <b-form-input
+              v-model="form.phone"
               required
               type="text"
               class="form-control"
@@ -38,16 +41,13 @@
           </div>
           <div class="col-6">
             <b-form-input
+              v-model="form.instagram"
               required
               type="text"
               class="form-control"
               name="entry.572496809"
               placeholder="Ваш ник в Insragram*"/>
-            <p class="text-left"><span class="font-weight-bold">*ВНИМАНИЕ!</span>
-              Необходимо использовать сой ник в Instagram,
-              с которго вы подписались на аккаунт марафона, спикеров и спонсоров. Ваш аккаунт должен
-          быть открытым и активным. Писать ник нужно без @, без ссылки,
-          только маленькими буквами</p>
+            <p class="text-left"><span class="font-weight-bold">*ВНИМАНИЕ!</span>{{ note }}</p>
           </div>
         </div>
       </div>
@@ -70,12 +70,33 @@
 import axios from 'axios';
 
 export default {
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        phone: '',
+        instagram: '',
+      },
+      note: 'Необходимо использовать сой ник в Instagram, с которго вы подписались на аккаунт марафона, спикеров и спонсоров. Ваш аккаунт должен быть открытым и активным. Писать ник нужно без @, без ссылки, только маленькими буквами',
+    };
+  },
   methods: {
-    submitFrom() {
+    async submitFrom() {
       const data = new FormData(this.$refs.form);
-      axios.post('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfXix3XzMPKy4dBE9z_4CvSmCQi4B6w8uT_ahxCnkCzpCWUFg/formResponse', data).then((res) => {
-        console.log(res);
-      });
+      try {
+        await axios.post('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfXix3XzMPKy4dBE9z_4CvSmCQi4B6w8uT_ahxCnkCzpCWUFg/formResponse', data);
+      } catch (e) {
+        console.log(e);
+      }
+      this.show = false;
+      this.form = {
+        name: '',
+        email: '',
+        phone: '',
+        instagram: '',
+      };
+      this.$bvModal.msgBoxOk('Ваши данные сохранены');
     },
   },
 };
