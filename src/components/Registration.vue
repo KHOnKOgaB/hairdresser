@@ -96,7 +96,9 @@ export default {
         phone: '',
         instagram: '',
       };
-      this.$bvModal.msgBoxOk('Ваши данные сохранены');
+      this.$bvModal.msgBoxOk('Ваши данные сохранены', {
+        centered: true,
+      });
     },
   },
 };
