@@ -5,8 +5,8 @@
     <div class="row align-items-center justify-content-center py-3">
       <div class="col-3" v-for="(item, index) in rules"  :key="index">
         <div class="rules-number">
-          <div class="round-number"><span class="number">{{item.number}}</span></div>
-          <h4 class="my-2 font-weight-bold">{{item.title}}</h4>
+          <div class="round-number mb-3"><span class="number">{{item.number}}</span></div>
+          <h4 class="my-2 font-weight-bold mb-3">{{item.title}}</h4>
           <p>{{item.text}}</p>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    // justify-content: space-around;
     height: 300px;
     padding: 1rem 1rem;
 }
