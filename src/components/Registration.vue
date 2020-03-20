@@ -87,9 +87,13 @@ export default {
       try {
         await axios.post('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfXix3XzMPKy4dBE9z_4CvSmCQi4B6w8uT_ahxCnkCzpCWUFg/formResponse', data);
       } catch (e) {
-        console.log(e);
+        this.form = {
+          name: '',
+          email: '',
+          phone: '',
+          instagram: '',
+        };
       }
-      this.show = false;
       this.form = {
         name: '',
         email: '',
