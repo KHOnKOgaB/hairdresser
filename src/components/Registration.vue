@@ -17,11 +17,16 @@
             <input type="text" class="form-control" placeholder="Введите ваш телефон">
           </div>
           <div class="col-6">
-            <input type="email" class="form-control" placeholder="Ваш ник в Insragram">
+            <input type="email" class="form-control" placeholder="Ваш ник в Insragram*">
+            <p>* ВНИМАНИЕ! Необходимо использовать сой ник в Instagram,
+              с которго вы подписались на аккаунт марафона, спикеров и спонсоров. Ваш аккаунт должен
+          быть открытым и активным. Писать ник нужно без @, без ссылки,
+          только маленькими буквами</p>
           </div>
         </div>
       </form>
     </div>
+    <h2 class="font-weight-bolder text-center text-white mt-5">Стоимость участия 199₽</h2>
   </div>
 </div>
 </template>
@@ -40,9 +45,9 @@
 }
 .pink {
     min-height: 100vh;
-    background: rgba(238, 159, 159, 0.25);
+    background: rgba(238, 159, 159, 0.45);
 }
 .register {
-  background-color: $black;
+  width: 800px;
 }
 </style>
