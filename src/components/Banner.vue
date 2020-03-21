@@ -2,13 +2,15 @@
   <div class="banner d-flex flex-column">
     <Header></Header>
     <b-container fluid>
-      <div class="row my-auto text-center">
-        <div class="col-8 mx-auto banner-headers">
-          <h1 class="text-white">Самый масштабный</h1>
-          <h1 class="text-uppercase
-          text-white mt-5 font-weight-bolder">марафон парикмахеров <br /> онлайн</h1>
-        </div>
-      </div>
+      <b-row class="row my-auto text-center">
+        <b-col lg="8" class="mx-auto">
+          <div class="banner-headers">
+            <h1 class="text-white">Самый масштабный</h1>
+            <h1 class="text-uppercase
+            text-white mt-5 font-weight-bolder">марафон парикмахеров <br /> онлайн</h1>
+          </div>
+        </b-col>
+      </b-row>
     </b-container>
   </div>
 </template>
@@ -26,8 +28,13 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/scss/main.scss';
+@include media-breakpoint-down(sm) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 .banner {
-  background: url('../assets/img/banner-up.jpg') no-repeat 0 0;
+  background: url('../assets/img/banner-up.jpg') no-repeat top center;
   min-height: 100vh;
   background-size: cover;
 }
@@ -36,4 +43,5 @@ export default {
   margin-top: 5rem;
   padding: 10rem 2rem;
 }
+
 </style>
