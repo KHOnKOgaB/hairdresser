@@ -5,7 +5,12 @@
     <div class="row align-items-center justify-content-center py-3">
       <div class="col-12 col-md-6 col-lg-3" v-for="(item, index) in rules" :key="index">
         <div class="rules-number">
-          <div data-aos="zoom-in" :data-aos-delay="item.delay" class="round-number mb-3"><span class="number">{{item.number}}</span></div>
+          <div
+          data-aos="zoom-in"
+          :data-aos-delay="item.delay"
+          class="round-number mb-3">
+          <span class="number">{{item.number}}</span>
+          </div>
           <h4 class="my-2 font-weight-bold mb-3">{{item.title}}</h4>
           <p>{{item.text}}</p>
         </div>
@@ -19,7 +24,8 @@
 export default {
   data() {
     return {
-      rules: [{
+      rules: [
+        {
           number: '1',
           title: 'Подпишитесь',
           text: 'на аккаунт марафона в Instagram',
@@ -48,8 +54,6 @@ export default {
   },
 };
 </script>
-
-
 <style scoped lang="scss">
 @import '../assets/scss/main.scss';
 .rules {
