@@ -1,6 +1,6 @@
 <template>
   <b-navbar class="bg-primary">
-    <b-container>
+    <b-container class="d-flex flex-column flex-md-row">
       <b-navbar-brand>
         <img class="logo" src="../assets/img/logo.png" />
       </b-navbar-brand>
