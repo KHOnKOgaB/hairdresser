@@ -3,17 +3,14 @@
   <h2 class="font-weight-bolder text-center">Правила участия</h2>
   <div class="container">
     <div class="row align-items-center justify-content-center py-3">
-      <div class="col-12 col-md-6 col-lg-3" v-for="(item, index) in rules"  :key="index">
+      <div class="col-12 col-md-6 col-lg-3" v-for="(item, index) in rules" :key="index">
         <div class="rules-number">
-          <div
-          data-aos="zoom-in"
-          :data-aos-delay="item.delay"
-          class="round-number mb-3"><span class="number">{{item.number}}</span></div>
+          <div data-aos="zoom-in" :data-aos-delay="item.delay" class="round-number mb-3"><span class="number">{{item.number}}</span></div>
           <h4 class="my-2 font-weight-bold mb-3">{{item.title}}</h4>
           <p>{{item.text}}</p>
         </div>
       </div>
-  </div>
+    </div>
   </div>
 </div>
 </template>
@@ -22,8 +19,7 @@
 export default {
   data() {
     return {
-      rules: [
-        {
+      rules: [{
           number: '1',
           title: 'Подпишитесь',
           text: 'на аккаунт марафона в Instagram',
@@ -57,7 +53,7 @@ export default {
 <style scoped lang="scss">
 @import '../assets/scss/main.scss';
 .rules {
-    background-color: rgba(238, 159, 159, 0.25);;
+    background-color: rgba(238, 159, 159, 0.25);
 }
 .rules-number {
     display: flex;
@@ -65,7 +61,7 @@ export default {
     align-items: center;
     // justify-content: space-around;
     height: 300px;
-    padding: 1rem 1rem;
+    padding: 1rem;
 }
 .round-number {
     background-color: $white;
@@ -80,8 +76,8 @@ export default {
     color: $primary;
     cursor: pointer;
     &:hover {
-      background-color: $black;
-      color: $white;
+        background-color: $black;
+        color: $white;
     }
 }
 .number {
