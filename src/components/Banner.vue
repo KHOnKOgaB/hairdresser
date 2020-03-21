@@ -9,6 +9,13 @@
             <h1 class="text-uppercase
             text-white mt-5 font-weight-bolder">марафон парикмахеров <br /> онлайн</h1>
           </div>
+          <a
+            variant="primary"
+            class="btn btn-primary text-white mt-5"
+            href="#features"
+            v-smooth-scroll>
+            Подробнее
+          </a>
         </b-col>
       </b-row>
     </b-container>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-5">
+  <div class="container py-5" id="features">
     <div class="features-header d-flex flex-column align-items-center justify-content-center">
       <h2 class="text-center font-weight-bold">Не упусти <br> потрясающую возможность </h2>
       <h3 class="text-center">побывать на мастер-классе у лучших!</h3>

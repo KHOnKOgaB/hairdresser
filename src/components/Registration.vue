@@ -45,7 +45,9 @@
               class="form-control"
               name="entry.572496809"
               placeholder="Ваш ник в Insragram*"/>
-            <p class="text-left"><span class="font-weight-bold">*ВНИМАНИЕ!</span> {{ note }}</p>
+            <p class="text-left my-2">
+              <span class="font-weight-bold">*ВНИМАНИЕ!</span> {{ note }}
+            </p>
           </b-col>
         </b-row>
       </b-container>
