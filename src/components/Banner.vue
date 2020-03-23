@@ -11,7 +11,7 @@
           </div>
           <a
             variant="primary"
-            class="btn btn-primary text-white mt-5"
+            class="btn btn-primary text-white mt-5 my-shadow"
             href="#features"
             v-smooth-scroll>
             Подробнее
@@ -50,5 +50,4 @@ export default {
   margin-top: 5rem;
   padding: 10rem 2rem;
 }
-
 </style>

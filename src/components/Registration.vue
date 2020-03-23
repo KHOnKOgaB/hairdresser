@@ -61,7 +61,7 @@
     <b-button
       variant="primary"
       type="submit"
-      class="text-white mb-3">Зарегистрируйся на марафон</b-button>
+      class="text-white mb-3 my-shadow">Зарегистрируйся на марафон</b-button>
     <a class="mt-auto" href="#">
       <img class="footer-logo" src="../assets/img/logo.png" />
     </a>

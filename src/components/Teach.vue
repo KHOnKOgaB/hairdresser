@@ -7,7 +7,7 @@
         <p>у лучших по цене рулона бумаги!</p>
         <a
           variant="primary"
-          class="btn btn-primary text-white my-3"
+          class="btn btn-primary text-white my-3 my-shadow"
           href="#registation"
           v-smooth-scroll>
           Зарегистрируйся на марафон
