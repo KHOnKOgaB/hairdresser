@@ -35,7 +35,8 @@
               type="text"
               class="form-control"
               name="entry.666901678"
-              placeholder="Введите ваш телефон"/>
+              placeholder='Введите ваш телефон'
+              v-mask="'############'"/>
           </b-col>
           <b-col md="6" class="mb-4">
             <b-form-input

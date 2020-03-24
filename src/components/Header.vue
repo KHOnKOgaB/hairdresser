@@ -21,4 +21,7 @@
 .header {
   background-color: $primary;
 }
+img {
+  width: 200px;
+}
 </style>

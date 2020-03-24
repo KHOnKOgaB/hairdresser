@@ -19,7 +19,10 @@
     "bootstrap-vue": "^2.7.0",
     "core-js": "^3.6.4",
     "express": "^4.17.1",
+    "v-mask": "^2.0.2",
     "vue": "^2.6.11",
+    "vue-headful": "^2.1.0",
+    "vue-the-mask": "^0.11.1",
     "vue2-smooth-scroll": "^1.2.0"
   },
   "devDependencies": {
