@@ -5,7 +5,7 @@
         <img class="logo" src="../assets/img/logo.png" />
       </b-navbar-brand>
       <b-navbar-nav class="ml-0 ml-sm-auto">
-        <b-nav-text class="text-white text-center">с 10 февраля по 2 марта 2020 года</b-nav-text>
+        <b-nav-text class="text-white text-center">с 10 апреля 2020 года</b-nav-text>
       </b-navbar-nav>
     </b-container>
   </b-navbar>

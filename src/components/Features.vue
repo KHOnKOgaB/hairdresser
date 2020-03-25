@@ -2,13 +2,16 @@
   <div class="container py-5" id="features">
     <div class="features-header d-flex flex-column align-items-center justify-content-center">
       <h2 class="text-center font-weight-bold">Не упусти <br> потрясающую возможность </h2>
-      <h3 class="text-center">побывать на мастер-классе у лучших!</h3>
-      <a class="btn btn-primary text-white my-3 px-4 py-2 font-weight-bold my-shadow"
-      href="#registation"
-      role="button"
-      v-smooth-scroll>
-        Зарегистрироваться на марафон
-      </a>
+      <h3 class="text-center">побывать на мастер-классе у лучших по цене кофе!</h3>
+      <div class="position-relative">
+        <a class="btn btn-primary text-white my-3 px-4 py-2 font-weight-bold"
+        href="#registation"
+        role="button"
+        v-smooth-scroll>
+          Зарегистрироваться на марафон
+        </a>
+        <p class="text-primary text-center text-small">Регистрируйся уже сегодня!</p>
+      </div>
     </div>
     <b-row class="justify-content-around">
       <b-col

@@ -80,7 +80,7 @@ export default {
     color: $primary;
     cursor: pointer;
     &:hover {
-        background-color: $black;
+        background-color: $brown;
         color: $white;
     }
 }

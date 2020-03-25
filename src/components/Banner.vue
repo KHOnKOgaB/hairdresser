@@ -14,7 +14,7 @@
           </div>
           <a
             variant="primary"
-            class="btn btn-primary text-white mt-4 px-3 py-2 font-weight-bold my-shadow"
+            class="btn btn-primary text-white mt-4 px-3 py-2 font-weight-bold"
             href="#features"
             v-smooth-scroll>
             Подробнее

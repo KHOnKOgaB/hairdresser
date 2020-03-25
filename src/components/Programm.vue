@@ -13,6 +13,12 @@
         class="my-3 text-center">
         <img class="prog-img mx-auto" :src="item.photo" />
       </b-col>
+      <a class="btn btn-primary text-white my-3 px-4 py-2 font-weight-bold"
+      href="#registation"
+      role="button"
+      v-smooth-scroll>
+        Зарегистрироваться на марафон
+      </a>
     </b-row>
   </b-container>
 </template>
@@ -32,30 +38,6 @@ export default {
         },
         {
           delay: '150',
-          photo: require('../assets/img/prog3.png'),
-        },
-        {
-          delay: '200',
-          photo: require('../assets/img/prog1.png'),
-        },
-        {
-          delay: '250',
-          photo: require('../assets/img/prog2.png'),
-        },
-        {
-          delay: '300',
-          photo: require('../assets/img/prog3.png'),
-        },
-        {
-          delay: '350',
-          photo: require('../assets/img/prog1.png'),
-        },
-        {
-          delay: '400',
-          photo: require('../assets/img/prog2.png'),
-        },
-        {
-          delay: '450',
           photo: require('../assets/img/prog3.png'),
         },
       ],
