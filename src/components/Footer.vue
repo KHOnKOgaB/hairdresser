@@ -1,8 +1,8 @@
 <template>
   <b-container fluid class="bg-primary py-4 text-white">
     <b-container>
-      <b-row>
-        <b-col cols='5'>
+      <b-row class="flex-column flex-sm-row">
+        <b-col lg='5' cols='12'>
             <ul>
               <li>ИП Камышников Алексей Юрьевич
                 <i class="info position-relative ml-1"><font-awesome-icon :icon="['fas', 'info']" />
@@ -21,7 +21,7 @@
               <li>ОГРНИП: 314190217600015</li>
             </ul>
         </b-col>
-        <b-col cols='4'>
+        <b-col lg='4' cols='12'>
           <ul>
             <li>
               <a class="text-white" href="https://docs.google.com/document/d/1mLbzMre8E3YYZx7UkmzNVClf653uliJZY-fJfycs0Oo/edit">
@@ -31,7 +31,7 @@
               Договора-аферты</a></li>
           </ul>
         </b-col>
-        <b-col cols='1' class="ml-auto text-white">
+        <b-col lg='1' cols='12' class="ml-0 ml-sm-auto text-white">
             <a href="https://www.instagram.com/hairmarafon_ru/">
               <font-awesome-icon class="instagram" :icon="['fab', 'instagram']" />
             </a>
@@ -86,5 +86,12 @@ li {
   }
 
 }
-
+@include media-breakpoint-down(sm) {
+.info {
+  .ip-info {
+    top: -19rem;
+    right: -9.25rem;
+  }
+}
+}
 </style>

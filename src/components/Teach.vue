@@ -11,7 +11,7 @@
           font-weight-bold"
           href="#registation"
           v-smooth-scroll>
-          Зарегистрируйся на марафон
+          Зарегистрироваться на марафон
         </a>
       </div>
     </div>
