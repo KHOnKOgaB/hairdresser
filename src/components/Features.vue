@@ -3,11 +3,11 @@
     <div class="features-header d-flex flex-column align-items-center justify-content-center">
       <h2 class="text-center font-weight-bold">Не упусти <br> потрясающую возможность </h2>
       <h3 class="text-center">побывать на мастер-классе у лучших!</h3>
-      <a class="btn btn-primary text-white my-3 px-4 py-3 font-weight-bold my-shadow"
+      <a class="btn btn-primary text-white my-3 px-4 py-2 font-weight-bold my-shadow"
       href="#registation"
       role="button"
       v-smooth-scroll>
-        Зарегистрируйся на марафон
+        Зарегистрироваться на марафон
       </a>
     </div>
     <b-row class="justify-content-around">
@@ -18,7 +18,7 @@
         :data-aos-delay='item.delay'
         class="col-12 my-3"
         v-for="(item, index) in features"  :key="index">
-        <div class="feature-card px-3 py-3">
+        <div class="feature-card px-3 py-2">
           <p class="title">{{item.title}}</p>
           <p class="name">{{item.name}}</p>
           <p class="info">{{item.info}}</p>
