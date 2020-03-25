@@ -11,7 +11,7 @@
         md="6"
         lg="4"
         class="my-3 text-center">
-        <img class="prog-img mx-auto" :src="item.photo" />
+        <a :href="item.link"><img class="prog-img mx-auto" :src="item.photo" /></a>
       </b-col>
       <a class="btn btn-primary text-white my-3 px-4 py-2 font-weight-bold"
       href="#registation"
@@ -31,14 +31,62 @@ export default {
         {
           delay: '50',
           photo: require('../assets/img/prog1.png'),
+          link: 'https://www.instagram.com/aleksmii/',
         },
         {
           delay: '100',
           photo: require('../assets/img/prog2.png'),
+          link: 'https://www.instagram.com/larisagimalieva/',
         },
         {
           delay: '150',
           photo: require('../assets/img/prog3.png'),
+          link: 'https://www.instagram.com/olga.kardi.hair/',
+        },
+        {
+          delay: '200',
+          photo: require('../assets/img/prog4.png'),
+          link: 'https://www.instagram.com/dina.coach/',
+        },
+        {
+          delay: '250',
+          photo: require('../assets/img/prog5.png'),
+          link: 'https://www.instagram.com/akciomasystem/',
+        },
+        {
+          delay: '300',
+          photo: require('../assets/img/prog6.png'),
+          link: 'https://www.instagram.com/sointera_biz/',
+        },
+        {
+          delay: '350',
+          photo: require('../assets/img/prog7.png'),
+          link: 'https://www.instagram.com/gosha_dzhagaev_school/',
+        },
+        {
+          delay: '400',
+          photo: require('../assets/img/prog8.png'),
+          link: 'https://www.instagram.com/_litvinova_julia/',
+        },
+        {
+          delay: '450',
+          photo: require('../assets/img/prog9.png'),
+          link: 'https://www.instagram.com/arisha.gennadevna/',
+        },
+        {
+          delay: '500',
+          photo: require('../assets/img/prog10.png'),
+          link: 'https://www.instagram.com/teperikova_hair_studio/',
+        },
+        {
+          delay: '550',
+          photo: require('../assets/img/prog11.png'),
+          link: 'https://www.instagram.com/annapines_hairexpert/',
+        },
+        {
+          delay: '600',
+          photo: require('../assets/img/prog12.jpg'),
+          link: 'https://www.instagram.com/veronikakravchenko/',
         },
       ],
     };
