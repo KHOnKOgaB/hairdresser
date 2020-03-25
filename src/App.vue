@@ -6,6 +6,7 @@
     <Programm></Programm>
     <Rules></Rules>
     <Registration></Registration>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Teach from './components/Teach.vue';
 import Programm from './components/Programm.vue';
 import Rules from './components/Rules.vue';
 import Registration from './components/Registration.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -26,6 +28,7 @@ export default {
     Programm,
     Rules,
     Registration,
+    Footer,
   },
 };
 </script>

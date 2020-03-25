@@ -3,13 +3,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BootstrapVue from 'bootstrap-vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHandPointDown } from '@fortawesome/free-solid-svg-icons';
+import { faHandPointDown, faInfo } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import vueSmoothScroll from 'vue2-smooth-scroll';
 import VueTheMask from 'vue-the-mask';
 import App from './App.vue';
 
-library.add(faHandPointDown);
+library.add(faHandPointDown, faInstagram, faInfo);
 
 AOS.init();
 Vue.config.productionTip = false;

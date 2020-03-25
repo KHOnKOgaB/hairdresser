@@ -62,7 +62,8 @@
     <b-button
       variant="primary"
       type="submit"
-      class="text-white mb-3 my-shadow">Зарегистрируйся на марафон</b-button>
+      class="text-white mb-3 my-shadow px-4 py-3 font-weight-bold">
+      Зарегистрируйся на марафон</b-button>
     <a class="mt-auto" href="#">
       <img class="footer-logo" src="../assets/img/logo.png" />
     </a>
@@ -122,7 +123,7 @@ export default {
 }
 .pink {
     min-height: 100vh;
-    background: rgba(238, 159, 159, 0.5);
+    background: rgba(238, 159, 159, 0.75);
 }
 .register {
   width: 800px;
