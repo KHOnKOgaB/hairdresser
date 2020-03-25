@@ -10,7 +10,7 @@
             text-white
             mt-5
             font-weight-bolder
-            biggest-font">марафон парикмахеров</h1>
+            biggest-font">марафон <br /> парикмахеров</h1>
           </div>
           <a
             variant="primary"
@@ -42,7 +42,7 @@ export default {
   font-size: 2.5rem;
 }
 .biggest-font {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 .banner {
   background: url('../assets/img/banner-up.jpg') no-repeat top center;
