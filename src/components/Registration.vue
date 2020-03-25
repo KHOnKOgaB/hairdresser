@@ -16,7 +16,7 @@
               required
               type="text"
               name="entry.1880855526"
-              class="form-control"
+              class="border-0"
               placeholder="Введите ваше имя"/>
           </b-col>
           <b-col md="6" class="mb-4">
@@ -25,7 +25,7 @@
               required
               type="email"
               name="entry.1562501161"
-              class="form-control"
+              class="border-0"
               placeholder="Введите ваш email"/>
           </b-col>
           <b-col md="6" class="mb-4">
@@ -33,7 +33,7 @@
               v-model="form.phone"
               required
               type="text"
-              class="form-control"
+              class="border-0"
               name="entry.666901678"
               placeholder='Введите ваш телефон'
               v-mask="'############'"/>
@@ -43,7 +43,7 @@
               v-model="form.instagram"
               required
               type="text"
-              class="form-control"
+              class="border-0"
               name="entry.572496809"
               placeholder="Ваш ник в Insragram*"/>
             <p class="text-left my-2">
@@ -105,9 +105,7 @@ export default {
         phone: '',
         instagram: '',
       };
-      this.$bvModal.msgBoxOk('Ваши данные сохранены', {
-        centered: true,
-      });
+      window.location.replace('https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=hairmarafon.ru&InvId=0&Culture=ru&Encoding=utf-8&OutSum=199&SignatureValue=8bf262e3e532324251a8e4f30e92d737');
     },
   },
 };
