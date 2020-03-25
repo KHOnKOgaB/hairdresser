@@ -22,7 +22,7 @@
           </ul>
         </b-col>
         <b-col lg='2' cols='12' class="ml-0 ml-sm-auto text-white d-flex align-items-start">
-            <b-link class="mr-2" href="https://www.instagram.com/hairmarafon_ru/">
+            <b-link class="mr-3" href="https://www.instagram.com/hairmarafon_ru/">
               <font-awesome-icon class="instagram" :icon="['fab', 'instagram']" />
             </b-link>
             <b-link class="text-white" v-b-modal.modal-center>
