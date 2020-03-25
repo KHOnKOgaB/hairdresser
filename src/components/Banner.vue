@@ -10,7 +10,7 @@
             text-white
             mt-5
             font-weight-bolder
-            biggest-font">марафон парикмахеров <br /> онлайн</h1>
+            biggest-font">марафон парикмахеров</h1>
           </div>
           <a
             variant="primary"
