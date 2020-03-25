@@ -10,7 +10,7 @@
         v-smooth-scroll>
           Зарегистрироваться на марафон
         </a>
-        <p class="text-primary text-center text-small">Регистрируйся уже сегодня!</p>
+        <p class="text-success text-center text-small">Регистрируйся уже сегодня!</p>
       </div>
     </div>
     <b-row class="justify-content-around">

@@ -46,7 +46,7 @@
               class="border-0"
               name="entry.572496809"
               placeholder="Ваш ник в Insragram*"/>
-            <p class="text-left my-2">
+            <p class="text-left text-white my-2">
               <span class="font-weight-bold">*ВНИМАНИЕ!</span> {{ note }}
             </p>
           </b-col>
@@ -121,7 +121,8 @@ export default {
 }
 .pink {
     min-height: 100vh;
-    background: rgba(238, 159, 159, 0.75);
+    // background: rgba(238, 159, 159, 0.75);
+    background: rgba(171, 126, 86, 0.6);
 }
 .register {
   width: 800px;

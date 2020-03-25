@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid class="footer py-4 text-white">
+  <b-container fluid class="bg-primary py-4 text-white">
     <b-container>
       <b-row class="flex-column flex-sm-row">
         <b-col lg='5' cols='12'>
@@ -53,9 +53,6 @@
 
 <style scoped lang="scss">
 @import '../assets/scss/main.scss';
-.footer {
-  background-color: $brown;
-}
 li {
   list-style-type: none;
 }
