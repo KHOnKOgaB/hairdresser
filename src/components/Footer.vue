@@ -25,7 +25,7 @@
             <a href="https://www.instagram.com/hairmarafon_ru/">
               <font-awesome-icon class="instagram" :icon="['fab', 'instagram']" />
             </a>
-            <b-button v-b-modal.modal-1>
+            <b-button v-b-modal.modal-center>
               <i class="info position-relative ml-1">
                 <font-awesome-icon :icon="['fas', 'info']" />
               </i>
@@ -33,7 +33,7 @@
         </b-col>
       </b-row>
     </b-container>
-    <b-modal id="modal-1" title="ИП Камышников А.>.">
+    <b-modal id="modal-center" centered title="ИП Камышников А.Ю.">
       <ul class="ip-info">
         <li><b>Р/С:</b> 40802810831000021122,</li>
         <li><b>Банк:</b> ЮЖНОЕ ГУ БАНКА РОССИИ,</li>
