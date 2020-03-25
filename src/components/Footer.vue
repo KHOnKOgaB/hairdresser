@@ -21,19 +21,17 @@
               Договора-аферты</a></li>
           </ul>
         </b-col>
-        <b-col lg='2' cols='12' class="ml-0 ml-sm-auto text-white">
-            <a href="https://www.instagram.com/hairmarafon_ru/">
+        <b-col lg='2' cols='12' class="ml-0 ml-sm-auto text-white d-flex align-items-start">
+            <b-link class="mr-2" href="https://www.instagram.com/hairmarafon_ru/">
               <font-awesome-icon class="instagram" :icon="['fab', 'instagram']" />
-            </a>
-            <b-button v-b-modal.modal-center>
-              <i class="info position-relative ml-1">
-                <font-awesome-icon :icon="['fas', 'info']" />
-              </i>
-            </b-button>
+            </b-link>
+            <b-link class="text-white" v-b-modal.modal-center>
+              <b-icon class="instagram" icon="info-circle"></b-icon>
+            </b-link>
         </b-col>
       </b-row>
     </b-container>
-    <b-modal id="modal-center" centered title="ИП Камышников А.Ю.">
+    <b-modal id="modal-center" centered title="ИП Камышников А.Ю." hide-footer>
       <ul class="ip-info">
         <li><b>Р/С:</b> 40802810831000021122,</li>
         <li><b>Банк:</b> ЮЖНОЕ ГУ БАНКА РОССИИ,</li>
