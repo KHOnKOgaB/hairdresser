@@ -6,7 +6,7 @@
     @submit.prevent="submitFrom"
     ref="form"
     action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfXix3XzMPKy4dBE9z_4CvSmCQi4B6w8uT_ahxCnkCzpCWUFg/formResponse">
-    <h2 class="font-weight-bolder text-center">Регистрация на марафон</h2>
+    <h2 class="font-weight-bolder text-white text-center">Регистрация на марафон</h2>
     <div class="align-items-center justify-content-around">
       <b-container class="py-5">
         <b-row class="mb-5">
@@ -54,10 +54,10 @@
       </b-container>
     </div>
     <h2 class="font-weight-bolder text-center text-white">Стоимость участия 199₽</h2>
-    <div class="my-3 text-white">
-      <font-awesome-icon class="hand-down" icon="hand-point-down" />
-      <font-awesome-icon class="hand-down ml-4" icon="hand-point-down" />
-      <font-awesome-icon class="hand-down ml-4" icon="hand-point-down" />
+    <div class="my-3 text-white d-flex">
+      <img class="hand-down" src="../assets/img/hand-down.svg" alt="">
+      <img class="hand-down ml-3" src="../assets/img/hand-down.svg" alt="">
+      <img class="hand-down ml-3" src="../assets/img/hand-down.svg" alt="">
     </div>
     <b-button
       variant="primary"
@@ -83,7 +83,8 @@ export default {
         phone: '',
         instagram: '',
       },
-      note: ' Необходимо использовать свой ник в Instagram, с которого вы подписались на аккаунт марафона, спикеров и спонсоров. Ваш аккаунт должен быть открытым и активным. Писать ник нужно без @, без ссылки, только маленькими буквами', };
+      note: ' Необходимо использовать свой ник в Instagram, с которого вы подписались на аккаунт марафона, спикеров и спонсоров. Ваш аккаунт должен быть открытым и активным. Писать ник нужно без @, без ссылки, только маленькими буквами',
+    };
   },
   methods: {
     async submitFrom() {
@@ -123,6 +124,10 @@ export default {
     // background: rgba(238, 159, 159, 0.75);
     background: rgba(171, 126, 86, 0.6);
 }
+::placeholder {
+    color: $success !important;
+    font-weight: bold;
+  }
 .register {
   width: 800px;
   max-width: 100%;
@@ -132,6 +137,18 @@ export default {
   width: 200px;
 }
 .hand-down {
-  font-size: 2rem;
+  width: 30px;
+  animation: moving 1.5s linear normal infinite;
+}
+@keyframes moving{
+  0% {
+    transform: translateY(-1rem);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+  100% {
+    transform: translateY(-1rem);
+  }
 }
 </style>
