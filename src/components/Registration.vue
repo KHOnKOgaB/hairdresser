@@ -53,20 +53,22 @@
         </b-row>
       </b-container>
     </div>
-    <h2 class="font-weight-bolder text-center text-white">Стоимость участия 199₽</h2>
-    <div class="my-3 text-white d-flex">
-      <font-awesome-icon class="hand-down" :icon="['fas', 'hand-point-down']" />
-      <font-awesome-icon class="hand-down ml-4" :icon="['fas', 'hand-point-down']" />
-      <font-awesome-icon class="hand-down ml-4" :icon="['fas', 'hand-point-down']" />
-    </div>
-    <b-button
-      variant="primary"
-      type="submit"
-      class="text-white mb-3 px-4 py-3 font-weight-bold">
-      Зарегистрироваться на марафон</b-button>
-    <a class="mt-auto" href="#">
-      <img class="footer-logo" src="../assets/img/logo.png" />
-    </a>
+    <div class="">
+      <h2 class="font-weight-bolder text-center text-white">Стоимость участия 199₽</h2>
+      <div class="py-3 text-white">
+        <font-awesome-icon class="hand-down" :icon="['fas', 'hand-point-down']" />
+        <font-awesome-icon class="hand-down ml-4" :icon="['fas', 'hand-point-down']" />
+        <font-awesome-icon class="hand-down ml-4" :icon="['fas', 'hand-point-down']" />
+      </div>
+      <b-button
+        variant="primary"
+        type="submit"
+        class="text-white mb-3 px-4 py-3 font-weight-bold">
+        Зарегистрироваться на марафон</b-button>
+      </div>
+      <a class="mt-auto" href="#">
+        <img class="footer-logo" src="../assets/img/logo.png" />
+      </a>
   </form>
 </div>
 </template>
