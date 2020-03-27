@@ -55,9 +55,9 @@
     </div>
     <h2 class="font-weight-bolder text-center text-white">Стоимость участия 199₽</h2>
     <div class="my-3 text-white d-flex">
-      <img class="hand-down" src="../assets/img/hand-down.svg" alt="">
-      <img class="hand-down ml-3" src="../assets/img/hand-down.svg" alt="">
-      <img class="hand-down ml-3" src="../assets/img/hand-down.svg" alt="">
+      <font-awesome-icon class="hand-down" :icon="['fas', 'hand-point-down']" />
+      <font-awesome-icon class="hand-down ml-4" :icon="['fas', 'hand-point-down']" />
+      <font-awesome-icon class="hand-down ml-4" :icon="['fas', 'hand-point-down']" />
     </div>
     <b-button
       variant="primary"
@@ -137,18 +137,18 @@ export default {
   width: 200px;
 }
 .hand-down {
-  width: 30px;
-  animation: moving 1.5s linear normal infinite;
+  font-size: 2rem;
+  // animation: moving 1.5s linear normal infinite;
 }
-@keyframes moving{
-  0% {
-    transform: translateY(-1rem);
-  }
-  50% {
-    transform: translateY(0.5rem);
-  }
-  100% {
-    transform: translateY(-1rem);
-  }
-}
+// @keyframes moving{
+//   0% {
+//     transform: translateY(-1rem);
+//   }
+//   50% {
+//     transform: translateY(0.5rem);
+//   }
+//   100% {
+//     transform: translateY(-1rem);
+//   }
+// }
 </style>
