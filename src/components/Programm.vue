@@ -13,12 +13,16 @@
         class="my-3 text-center">
         <a :href="item.link"><img class="prog-img mx-auto" :src="item.photo" /></a>
       </b-col>
-      <a class="btn btn-primary text-white my-3 px-4 py-2 font-weight-bold"
-      href="#registation"
-      role="button"
-      v-smooth-scroll>
-        Зарегистрироваться на марафон
-      </a>
+    </b-row>
+    <b-row class="justify-content-center">
+      <b-col cols='12' lg='4'>
+        <a class="btn btn-primary text-white my-3 px-4 py-2 font-weight-bold"
+        href="#registation"
+        role="button"
+        v-smooth-scroll>
+          Зарегистрироваться на марафон
+        </a>
+      </b-col>
     </b-row>
   </b-container>
 </template>
@@ -87,6 +91,16 @@ export default {
           delay: '600',
           photo: require('../assets/img/prog12.jpg'),
           link: 'https://www.instagram.com/veronikakravchenko/',
+        },
+        {
+          delay: '650',
+          photo: require('../assets/img/prog13.jpg'),
+          link: 'https://www.instagram.com/timurbegichevstudio/',
+        },
+        {
+          delay: '700',
+          photo: require('../assets/img/prog14.jpg'),
+          link: 'https://www.instagram.com/sergeyshapochka/',
         },
       ],
     };

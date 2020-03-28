@@ -55,7 +55,7 @@
     </div>
     <div class="">
       <h2 class="font-weight-bolder text-center text-white">Стоимость участия 199₽</h2>
-      <div class="py-3 text-white">
+      <div class="my-3 text-white">
         <font-awesome-icon class="hand-down" :icon="['fas', 'hand-point-down']" />
         <font-awesome-icon class="hand-down ml-4" :icon="['fas', 'hand-point-down']" />
         <font-awesome-icon class="hand-down ml-4" :icon="['fas', 'hand-point-down']" />
