@@ -54,7 +54,7 @@ export default {
         },
         {
           delay: '250',
-          photo: require('../assets/img/prog5.png'),
+          photo: require('../assets/img/prog5.jpg'),
           link: 'https://www.instagram.com/akciomasystem/',
         },
         {
@@ -79,7 +79,7 @@ export default {
         },
         {
           delay: '500',
-          photo: require('../assets/img/prog10.png'),
+          photo: require('../assets/img/prog10.jpg'),
           link: 'https://www.instagram.com/teperikova_hair_studio/',
         },
         {
@@ -101,6 +101,16 @@ export default {
           delay: '700',
           photo: require('../assets/img/prog14.jpg'),
           link: 'https://www.instagram.com/sergeyshapochka/',
+        },
+        {
+          delay: '750',
+          photo: require('../assets/img/prog15.jpg'),
+          link: 'https://www.instagram.com/stevlana_kuleshova_rb/',
+        },
+        {
+          delay: '800',
+          photo: require('../assets/img/prog16.jpg'),
+          link: 'https://www.instagram.com/vitaly.antoshenko/',
         },
       ],
     };
